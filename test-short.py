@@ -16,11 +16,7 @@ class Test(unittest.TestCase):
         self.assertRaises(ValueError, short.process_input(1,1,5,"a"))
     
     def test4(self): #it checks the main method
-        self.assertEqual(10, short.shortest_distance(1,1,1,1))
-    
-    #def test5(self): #it checks the main method
-     #   self.assertEqual(None, short.process_input("","a",1,1))
-
+        self.assertEqual(0, short.shortest_distance(1,1,1,1))
 
 
 if __name__ == '__main__':
